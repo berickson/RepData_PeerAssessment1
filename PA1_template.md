@@ -144,7 +144,6 @@ You can see the number of steps per day has gone up after imputing values.
 >
 >Your plot will look different from the one above because you will be using the activity monitor data. Note that the above plot was made using the lattice system but you can make the same version of the plot using any plotting system you choose.
 
-The plot below showed different in steps by time period between weekdays and weekends.  We can see that the subject starts moving earlier on weekdays nad has as strong spkie in the morning that we do not see in the weekend.
 
 ```r
 library('ggplot2')
@@ -158,4 +157,7 @@ ggplot(d2,aes(x=interval, y=steps)) +stat_summary(fun.y="mean",geom='line')  +fa
 ```
 
 ![plot of chunk unnamed-chunk-12](./PA1_template_files/figure-html/unnamed-chunk-12.png) 
+
+The plot above shows a difference in steps by time period between weekdays and weekends.  We can see that the subject starts moving earlier on weekdays and has as strong spike in the morning that we do not see in the weekend.
+
 
